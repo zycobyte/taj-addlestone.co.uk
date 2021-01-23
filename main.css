@@ -1,7 +1,8 @@
 html body {
     background-color: #00002D;
-
     min-width: 450px;
+
+    font-family: "Segoe Script";
 }
 @media all and (max-width: 450px) {
     html body {
@@ -100,7 +101,6 @@ html body {
 /*bottom page small width displays*/
 @media all and (max-width: 1000px) {
     #lower-content{
-        /*height: 666px;*/
         height: 100vh;
     }
 
@@ -127,7 +127,7 @@ html body {
     }
 
     .button {
-        margin-bottom: 40px;
+        margin-bottom: 75px;
     }
 }
 
@@ -168,7 +168,7 @@ html body {
     min-width: 115px;
     min-height: 115px;
 
-    background-image: url("https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8ZGF3bnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+    background-image: url("tmp-logo.png");
     /*background-color: red;*/
     background-position: center;
     background-size: contain;
@@ -214,7 +214,9 @@ html body {
 
 #lower-content {
     width: 100%;
-    min-height: 540px;
+    min-height: 750px;
+
+    /*min-height: 540px;*/
 
     overflow: hidden;
     text-align: center;
