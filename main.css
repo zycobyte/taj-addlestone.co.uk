@@ -100,7 +100,8 @@ html body {
 /*bottom page small width displays*/
 @media all and (max-width: 1000px) {
     #lower-content{
-        height: 666px;
+        /*height: 666px;*/
+        height: 100vh;
     }
 
     .table {
