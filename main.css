@@ -98,7 +98,7 @@ html body {
 }
 
 /*bottom page small width displays*/
-@media all and (max-width: 870px) {
+@media all and (max-width: 1000px) {
     #lower-content{
         height: 666px;
     }
@@ -118,6 +118,11 @@ html body {
 
     #map {
         margin-top: -15px;
+
+        max-width:820px;
+        width:calc(100% - 90px);
+        height:430px;
+
     }
 
     .button {
@@ -126,7 +131,7 @@ html body {
 }
 
 /*bottom page normal width display*/
-@media all and (min-width: 870px) {
+@media all and (min-width: 1000px) {
     #lower-content{
         height: 100vh;
     }
@@ -143,6 +148,12 @@ html body {
     .button {
         margin-bottom: 118px;
     }
+
+    #map{
+        width:410px;
+        height:215px;
+    }
+
 }
 
 
@@ -236,8 +247,8 @@ html body {
 }
 
 #map {
-    width: 410px;
-    height: 215px;
+    /*width: 410px;*/
+    /*height: 215px;*/
     /*margin-top: calc(50vh - (215px / 2));*/
     /*margin-top: 20vh;*/
     box-shadow: 0 0 10px 0px white;
