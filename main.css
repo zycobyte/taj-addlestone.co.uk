@@ -2,7 +2,9 @@ html body {
     background-color: #00002D;
     min-width: 450px;
 
-    font-family: "Segoe Script";
+    /*font-family: 'Architects Daughter', cursive;*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 14pt;
 }
 @media all and (max-width: 450px) {
     html body {
@@ -50,6 +52,10 @@ html body {
         margin-left: calc(50% - 57.5px);
     }
 
+    #mahal-img-container{
+        margin-top: 25px;
+    }
+
     #taj-mahal-image {
         top: 175px;
     }
@@ -64,8 +70,18 @@ html body {
     #taj-mahal-image {
         top: 37.5vh;
     }
+
+    #telnos{
+        margin-top: 8vh;
+    }
 }
 
+
+@media all and (min-height: 725px) {
+    #telnos{
+        margin-top: 25vh;
+    }
+}
 
 /*bottom page small height displays*/
 @media all and (max-height: 540px) {
@@ -188,8 +204,19 @@ html body {
 
 #mahal-img-container {
     text-align: center;
-    color: green;
+    /*color: green;*/
+    color: #FFC4FA;
 }
+
+a.tel {
+    color: #FFC4FA;
+    background-color: rgba(255, 196, 250, 0.11);
+    text-decoration: underline;
+}
+a.tel:hover {
+    color: #e2acdd;
+}
+
 
 #taj-mahal-image {
     /*background-color: deepskyblue;*/
