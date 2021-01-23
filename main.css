@@ -1,0 +1,225 @@
+html body {
+    background-color: #00002D;
+
+    transition-duration: 0.5s;
+
+    min-width: 450px;
+}
+@media all and (max-width: 450px) {
+    html body {
+        overflow-x: auto;
+    }
+
+    #taj-mahal-image{
+        width: 450px;
+        left: 0;
+    }
+}
+@media all and (min-width: 450px) {
+    html body {
+        /*hides #taj-mahal-image on small displays*/
+        overflow-x: hidden;
+    }
+
+    #taj-mahal-image{
+        width: 1560px;
+        left: 50%;
+        margin-left: calc(-1560px / 2);
+    }
+}
+
+
+#header {
+    width: 100%;
+    height: 37.5vh;
+    padding-top: 50px;
+}
+
+
+/*top page small height displays*/
+@media all and (max-height: 465px) {
+    #logo-main {
+        margin-left: calc(50% - 57.5px);
+    }
+
+    #taj-mahal-image {
+        top: 175px;
+    }
+}
+
+/*top page normal height display*/
+@media all and (min-height: 465px) {
+    #logo-main {
+        margin-left: calc(50% - 12.5vh);
+    }
+
+    #taj-mahal-image {
+        top: 37.5vh;
+    }
+}
+
+
+/*bottom page small height displays*/
+@media all and (max-height: 540px) {
+    #lower-title {
+        margin-top: 25px;
+    }
+
+    #left-cont {
+        padding-top: calc(270px - (215px / 2) - 40px - 50px);
+    }
+
+    #map {
+        margin-top: calc(270px - (215px / 2) - 50px);
+    }
+
+}
+
+/*bottom page normal height display*/
+@media all and (min-height: 540px) {
+    #lower-title {
+        margin-top: 50px;
+    }
+
+    #left-cont {
+        padding-top: calc(50vh - (215px / 2) - 80px);
+    }
+
+    #map {
+        margin-top: calc(50vh - (215px / 2));
+    }
+}
+
+/*bottom page small width displays*/
+@media all and (max-width: 870px) {
+    #lower-content{
+        height: 666px;
+    }
+
+    .table {
+        display: grid;
+    }
+
+    .column {
+        width: 100%;
+        height: 50%;
+    }
+
+    #left-cont {
+        padding-top: 20px;
+    }
+
+    #map {
+        margin-top: -15px;
+    }
+
+    .button {
+        margin-bottom: 40px;
+    }
+}
+
+/*bottom page normal width display*/
+@media all and (min-width: 870px) {
+    #lower-content{
+        height: 100vh;
+    }
+
+    .table {
+        display: flex;
+    }
+
+    .column {
+        width: 50%;
+        height: 100%;
+    }
+
+    .button {
+        margin-bottom: 118px;
+    }
+}
+
+
+#logo-main {
+    /*width: 256px;*/
+    /*height: 256px;*/
+
+    width: 25vh;
+    height: 25vh;
+
+    min-width: 115px;
+    min-height: 115px;
+
+    background-color: red;
+
+    border-radius: 15px;
+}
+
+#upper-content {
+    width: 100%;
+    height: calc(100vh - 37.5vh);
+    min-height: 325px;
+    /*min-height: 540px;*/
+
+    overflow: hidden;
+}
+
+#mahal-img-container {
+    text-align: center;
+    color: green;
+}
+
+#taj-mahal-image {
+    background-color: deepskyblue;
+
+    position: absolute;
+
+    z-index: -1;
+    /*Height, bottomcrop, topcrop*/
+    /*height: calc(1035px - 134px - 202px);*/
+    height: calc(100vh - 37.5vh);
+    min-height: 285px;
+
+    /*calc(180px + 202px);*/
+}
+
+
+#lower-content {
+    width: 100%;
+    min-height: 540px;
+
+    overflow: hidden;
+    text-align: center;
+}
+
+#lower-title {
+    color: lightgray;
+}
+
+.table {
+    height: 100%;
+    width: 100%;
+}
+
+.column {
+    display: table-column;
+}
+
+.button-style {
+    /*margin-bottom: 118px;*/
+    background-color: #180042;
+    width: 255px;
+    height: 45px;
+    border-radius: 15px;
+    margin-left: calc(50% - 127px);
+
+    display: block;
+}
+
+#map {
+    width: 410px;
+    height: 215px;
+    /*margin-top: calc(50vh - (215px / 2));*/
+    /*margin-top: 20vh;*/
+    box-shadow: 0 0 10px 0px white;
+    border-radius: 10px;
+}
