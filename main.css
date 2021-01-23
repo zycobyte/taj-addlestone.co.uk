@@ -1,8 +1,6 @@
 html body {
     background-color: #00002D;
 
-    transition-duration: 0.5s;
-
     min-width: 450px;
 }
 @media all and (max-width: 450px) {
@@ -17,12 +15,21 @@ html body {
 }
 @media all and (min-width: 450px) {
     html body {
-        /*hides #taj-mahal-image on small displays*/
         overflow-x: hidden;
     }
 
     #taj-mahal-image{
-        width: 1560px;
+        width: 100%;
+        max-width: 1560px;
+        left: 0;
+
+        /*width: 1560px;*/
+    }
+}
+
+/*center image at full res*/
+@media all and (min-width: 1560px) {
+    #taj-mahal-image{
         left: 50%;
         margin-left: calc(-1560px / 2);
     }
@@ -149,7 +156,11 @@ html body {
     min-width: 115px;
     min-height: 115px;
 
-    background-color: red;
+    background-image: url("https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8ZGF3bnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+    /*background-color: red;*/
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 
     border-radius: 15px;
 }
@@ -169,9 +180,15 @@ html body {
 }
 
 #taj-mahal-image {
-    background-color: deepskyblue;
+    /*background-color: deepskyblue;*/
+    background-image: url("tmp-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     position: absolute;
+
+    /*width: 1560px;*/
 
     z-index: -1;
     /*Height, bottomcrop, topcrop*/
@@ -209,6 +226,9 @@ html body {
     background-color: #180042;
     width: 255px;
     height: 45px;
+    line-height: 45px;
+    font-size: 14pt;
+
     border-radius: 15px;
     margin-left: calc(50% - 127px);
 
@@ -222,4 +242,12 @@ html body {
     /*margin-top: 20vh;*/
     box-shadow: 0 0 10px 0px white;
     border-radius: 10px;
+}
+
+
+
+a {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
 }
