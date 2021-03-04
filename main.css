@@ -184,7 +184,7 @@ html body {
     min-width: 115px;
     min-height: 115px;
 
-    background-image: url("tmp-logo.png");
+    background-image: url("logo.png");
     /*background-color: red;*/
     background-position: center;
     background-size: contain;
@@ -220,7 +220,7 @@ a.tel:hover {
 
 #taj-mahal-image {
     /*background-color: deepskyblue;*/
-    background-image: url("tmp-bg.png");
+    background-image: url("bg-img.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
