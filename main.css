@@ -15,8 +15,15 @@ html body {
         width: 450px;
         left: 0;
     }
+}
+@media all and (max-width: 1060px) {
     #moon-glow{
         display: none;
+    }
+}
+@media all and (min-width: 1060px) {
+    #moon-glow{
+        margin-left: calc(50% + 490px);
     }
 }
 @media all and (min-width: 450px) {
@@ -32,9 +39,6 @@ html body {
         /*width: 1560px;*/
     }
 
-    #moon-glow{
-        margin-left: calc(50% + 490px);
-    }
 }
 
 /*center image at full res*/
@@ -212,7 +216,7 @@ html body {
     background-size: contain;
     background-repeat: no-repeat;
 
-    border-radius: 115px;
+    border-radius: 1000px;
     box-shadow: inset 0px 0px 50px -50px #fff, 0px 0px 75px -50px #fff;
     background-color: rgba(255, 255, 255, 0.025);}
 
