@@ -1,5 +1,5 @@
 html body {
-    background-color: #00002D;
+    background: #00002D linear-gradient(90deg, #00002D 0%, #00002d 50%, #00003b 100%);
     min-width: 450px;
 
     /*font-family: 'Architects Daughter', cursive;*/
@@ -15,6 +15,9 @@ html body {
         width: 450px;
         left: 0;
     }
+    #moon-glow{
+        display: none;
+    }
 }
 @media all and (min-width: 450px) {
     html body {
@@ -28,6 +31,10 @@ html body {
 
         /*width: 1560px;*/
     }
+
+    #moon-glow{
+        margin-left: calc(50% + 490px);
+    }
 }
 
 /*center image at full res*/
@@ -35,6 +42,11 @@ html body {
     #taj-mahal-image{
         left: 50%;
         margin-left: calc(-1560px / 2);
+    }
+
+    #moon-glow{
+        left: 50%;
+        margin-left: calc(555px);
     }
 }
 
@@ -173,6 +185,16 @@ html body {
 
 }
 
+#moon-glow{
+    width: 100px;
+    height: 100px;
+    background-color: #000ab1;
+    border-radius: 200px;
+    margin-top: -34px;
+    filter: blur(75px);
+    z-index: -10;
+    position: absolute;
+}
 
 #logo-main {
     /*width: 256px;*/
@@ -190,8 +212,9 @@ html body {
     background-size: contain;
     background-repeat: no-repeat;
 
-    border-radius: 15px;
-}
+    border-radius: 115px;
+    box-shadow: inset 0px 0px 50px -50px #fff, 0px 0px 75px -50px #fff;
+    background-color: rgba(255, 255, 255, 0.025);}
 
 #upper-content {
     width: 100%;
@@ -221,7 +244,8 @@ a.tel:hover {
 #taj-mahal-image {
     /*background-color: deepskyblue;*/
     background-image: url("bg-img.png");
-    background-position: center;
+    /*background-position: center;*/
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -274,6 +298,17 @@ a.tel:hover {
     margin-left: calc(50% - 127px);
 
     display: block;
+    box-shadow: 0 5px 21px 0px #000;
+    transition-duration: 0.5s;
+}
+
+.button-style:hover{
+    box-shadow: 0 3px 11px 0px #000;
+}
+
+.button-style:active{
+    box-shadow: 0 0
+    5px 0px #000;
 }
 
 #map {
