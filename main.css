@@ -173,6 +173,10 @@ html body {
         width: 382px;
         height: 67px;
     }
+
+    #mahal-img-container{
+        font-size: 20pt;
+    }
 }
 
 /*bottom page normal width display*/
