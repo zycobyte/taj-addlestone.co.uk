@@ -1,10 +1,10 @@
 html body {
     background: #00002D linear-gradient(90deg, #00002D 0%, #00002d 50%, #00003b 100%);
-    min-width: 450px;
+    min-width: 300px;
 
     /*font-family: 'Architects Daughter', cursive;*/
     font-family: 'Dancing Script', cursive;
-    font-size: 14pt;
+    font-size: 20pt;
 }
 
 @media all and (max-width: 450px) {
@@ -97,9 +97,9 @@ html body {
 }
 
 
-@media all and (min-height: 725px) {
+@media all and (min-height: 1000px) {
     #telnos {
-        margin-top: 25vh;
+        margin-top: 12.5vh;
     }
 }
 
@@ -167,15 +167,15 @@ html body {
     }
 
     .button-style {
-        margin-left: calc(50% - 191px);
-        line-height: 67px;
-        font-size: 21pt;
-        width: 382px;
-        height: 67px;
+        margin-left: calc(50% - (382px * 1.5 / 2));
+        line-height: calc(67px * 1.5);
+        font-size: 36pt;
+        width: calc(382px * 1.5);
+        height: calc(67px * 1.5);
     }
 
     #mahal-img-container{
-        font-size: 20pt;
+        font-size: 36pt;
     }
 }
 
@@ -241,8 +241,9 @@ html body {
     background-repeat: no-repeat;
 
     border-radius: 1000px;
-    box-shadow: inset 0px 0px 50px -50px #fff, 0px 0px 50px -25px #fff;
-    background-color: rgba(255, 255, 255, 0.1);}
+    /*box-shadow: inset 0px 0px 50px -50px #fff, 0px 0px 50px -25px #fff;*/
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+}
 
 #upper-content {
     width: 100%;
